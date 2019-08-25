@@ -3,6 +3,7 @@
 Lit-Element web component to show a historical line of events
 
 ## Demo
+[Codepen historical-line (https://codepen.io/manufosela/pen/bGbqWPb)]
 
 ```
 <h2>Basic historical-line Demo</h2>
@@ -20,6 +21,7 @@ Lit-Element web component to show a historical line of events
 
 * --font-size
 * --title-color
+
 
 ```
 <!---

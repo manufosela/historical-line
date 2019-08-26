@@ -1,7 +1,7 @@
 {
   "name": "historical-line",
   "description": "Lit-Element webcomponent historical-line",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "historical-line.js",
   "repository": {
     "type": "git",

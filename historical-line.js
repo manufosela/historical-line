@@ -28,6 +28,9 @@ class HistoricalLine extends LitElement {
     return css`
       :host {
         display: block;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        margin: 20px;
         --font-size: 16px;
         --title-color: #000;
       }

@@ -105,10 +105,10 @@ class HistoricalLine extends LitElement {
   }
 
   calcData() {
-    this.data.unshift({start: '1/1/' + this.startYear, main: '', bg: '', desc: ''});
-    this.data.push({start: this.today.getMonth() + '/' + this.today.getDate() + '/' + this.today.getFullYear(), main: '', desc: '', bg: ''});
+    this.data.unshift({start: '1/1/' + this.startYear, main: '', bg: '', color:'', desc: ''});
+    this.data.push({start: this.today.getMonth() + '/' + this.today.getDate() + '/' + this.today.getFullYear(), main: '', desc: '', bg: '', color: ''});
 
-    this.data.push({start: '12/1/' + this.endYear, main: '', desc: '', bg: ''});
+    this.data.push({start: '12/1/' + this.endYear, main: '', desc: '', bg: '', color: ''});
 
     let newStart = this.startDate;
     this.arrColspan = this.data.map((t, index) => {
@@ -129,7 +129,7 @@ class HistoricalLine extends LitElement {
     }
 
     this.arrMain = this.data.map((el, index)=>{
-      return `<td class="item" style="background:${el.bg}" colspan="${this.arrColspan[index + 1]}">${el.main}</td>`;
+      return `<td class="item" style="background:${el.bg}; color:${el.color};" colspan="${this.arrColspan[index + 1]}">${el.main}</td>`;
     });
     this.arrMain.pop();
 
